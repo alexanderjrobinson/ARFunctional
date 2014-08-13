@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA4511DA199C112E00803761 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4511D9199C112E00803761 /* Foundation.framework */; };
+		FA4511DF199C112E00803761 /* ARFunctional.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA4511DE199C112E00803761 /* ARFunctional.h */; };
+		FA4511E1199C112E00803761 /* ARFunctional.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4511E0199C112E00803761 /* ARFunctional.m */; };
+		FA4511E8199C112E00803761 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4511E7199C112E00803761 /* XCTest.framework */; };
+		FA4511E9199C112E00803761 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4511D9199C112E00803761 /* Foundation.framework */; };
+		FA4511EB199C112E00803761 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4511EA199C112E00803761 /* UIKit.framework */; };
+		FA4511EE199C112E00803761 /* libARFunctional.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4511D6199C112E00803761 /* libARFunctional.a */; };
+		FA4511F4199C112E00803761 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA4511F2199C112E00803761 /* InfoPlist.strings */; };
+		FA4511F6199C112E00803761 /* ARFunctionalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4511F5199C112E00803761 /* ARFunctionalTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA4511EC199C112E00803761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA4511CE199C112E00803761 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA4511D5199C112E00803761;
+			remoteInfo = ARFunctional;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA4511D4199C112E00803761 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				FA4511DF199C112E00803761 /* ARFunctional.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FA4511D6199C112E00803761 /* libARFunctional.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libARFunctional.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4511D9199C112E00803761 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA4511DD199C112E00803761 /* ARFunctional-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARFunctional-Prefix.pch"; sourceTree = "<group>"; };
+		FA4511DE199C112E00803761 /* ARFunctional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARFunctional.h; sourceTree = "<group>"; };
+		FA4511E0199C112E00803761 /* ARFunctional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARFunctional.m; sourceTree = "<group>"; };
+		FA4511E6199C112E00803761 /* ARFunctionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARFunctionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4511E7199C112E00803761 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA4511EA199C112E00803761 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FA4511F1199C112E00803761 /* ARFunctionalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARFunctionalTests-Info.plist"; sourceTree = "<group>"; };
+		FA4511F3199C112E00803761 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA4511F5199C112E00803761 /* ARFunctionalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARFunctionalTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA4511D3199C112E00803761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4511DA199C112E00803761 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4511E3199C112E00803761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4511E8199C112E00803761 /* XCTest.framework in Frameworks */,
+				FA4511EE199C112E00803761 /* libARFunctional.a in Frameworks */,
+				FA4511EB199C112E00803761 /* UIKit.framework in Frameworks */,
+				FA4511E9199C112E00803761 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA4511CD199C112E00803761 = {
+			isa = PBXGroup;
+			children = (
+				FA4511DB199C112E00803761 /* ARFunctional */,
+				FA4511EF199C112E00803761 /* ARFunctionalTests */,
+				FA4511D8199C112E00803761 /* Frameworks */,
+				FA4511D7199C112E00803761 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA4511D7199C112E00803761 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA4511D6199C112E00803761 /* libARFunctional.a */,
+				FA4511E6199C112E00803761 /* ARFunctionalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA4511D8199C112E00803761 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA4511D9199C112E00803761 /* Foundation.framework */,
+				FA4511E7199C112E00803761 /* XCTest.framework */,
+				FA4511EA199C112E00803761 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA4511DB199C112E00803761 /* ARFunctional */ = {
+			isa = PBXGroup;
+			children = (
+				FA4511DE199C112E00803761 /* ARFunctional.h */,
+				FA4511E0199C112E00803761 /* ARFunctional.m */,
+				FA4511DC199C112E00803761 /* Supporting Files */,
+			);
+			path = ARFunctional;
+			sourceTree = "<group>";
+		};
+		FA4511DC199C112E00803761 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA4511DD199C112E00803761 /* ARFunctional-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA4511EF199C112E00803761 /* ARFunctionalTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA4511F5199C112E00803761 /* ARFunctionalTests.m */,
+				FA4511F0199C112E00803761 /* Supporting Files */,
+			);
+			path = ARFunctionalTests;
+			sourceTree = "<group>";
+		};
+		FA4511F0199C112E00803761 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA4511F1199C112E00803761 /* ARFunctionalTests-Info.plist */,
+				FA4511F2199C112E00803761 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA4511D5199C112E00803761 /* ARFunctional */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA4511F9199C112E00803761 /* Build configuration list for PBXNativeTarget "ARFunctional" */;
+			buildPhases = (
+				FA4511D2199C112E00803761 /* Sources */,
+				FA4511D3199C112E00803761 /* Frameworks */,
+				FA4511D4199C112E00803761 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARFunctional;
+			productName = ARFunctional;
+			productReference = FA4511D6199C112E00803761 /* libARFunctional.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FA4511E5199C112E00803761 /* ARFunctionalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA4511FC199C112E00803761 /* Build configuration list for PBXNativeTarget "ARFunctionalTests" */;
+			buildPhases = (
+				FA4511E2199C112E00803761 /* Sources */,
+				FA4511E3199C112E00803761 /* Frameworks */,
+				FA4511E4199C112E00803761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA4511ED199C112E00803761 /* PBXTargetDependency */,
+			);
+			name = ARFunctionalTests;
+			productName = ARFunctionalTests;
+			productReference = FA4511E6199C112E00803761 /* ARFunctionalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA4511CE199C112E00803761 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex Robinson";
+			};
+			buildConfigurationList = FA4511D1199C112E00803761 /* Build configuration list for PBXProject "ARFunctional" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA4511CD199C112E00803761;
+			productRefGroup = FA4511D7199C112E00803761 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA4511D5199C112E00803761 /* ARFunctional */,
+				FA4511E5199C112E00803761 /* ARFunctionalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA4511E4199C112E00803761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4511F4199C112E00803761 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA4511D2199C112E00803761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4511E1199C112E00803761 /* ARFunctional.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4511E2199C112E00803761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4511F6199C112E00803761 /* ARFunctionalTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA4511ED199C112E00803761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA4511D5199C112E00803761 /* ARFunctional */;
+			targetProxy = FA4511EC199C112E00803761 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA4511F2199C112E00803761 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA4511F3199C112E00803761 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA4511F7199C112E00803761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA4511F8199C112E00803761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA4511FA199C112E00803761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ARFunctional.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARFunctional/ARFunctional-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FA4511FB199C112E00803761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ARFunctional.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARFunctional/ARFunctional-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FA4511FD199C112E00803761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARFunctional/ARFunctional-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ARFunctionalTests/ARFunctionalTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FA4511FE199C112E00803761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARFunctional/ARFunctional-Prefix.pch";
+				INFOPLIST_FILE = "ARFunctionalTests/ARFunctionalTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA4511D1199C112E00803761 /* Build configuration list for PBXProject "ARFunctional" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4511F7199C112E00803761 /* Debug */,
+				FA4511F8199C112E00803761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA4511F9199C112E00803761 /* Build configuration list for PBXNativeTarget "ARFunctional" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4511FA199C112E00803761 /* Debug */,
+				FA4511FB199C112E00803761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA4511FC199C112E00803761 /* Build configuration list for PBXNativeTarget "ARFunctionalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4511FD199C112E00803761 /* Debug */,
+				FA4511FE199C112E00803761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA4511CE199C112E00803761 /* Project object */;
+}
