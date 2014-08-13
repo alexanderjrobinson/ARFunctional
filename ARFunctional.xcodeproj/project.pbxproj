@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		FA4511DA199C112E00803761 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4511D9199C112E00803761 /* Foundation.framework */; };
-		FA4511DF199C112E00803761 /* ARFunctional.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA4511DE199C112E00803761 /* ARFunctional.h */; };
-		FA4511E1199C112E00803761 /* ARFunctional.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4511E0199C112E00803761 /* ARFunctional.m */; };
 		FA4511E8199C112E00803761 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4511E7199C112E00803761 /* XCTest.framework */; };
 		FA4511E9199C112E00803761 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4511D9199C112E00803761 /* Foundation.framework */; };
 		FA4511EB199C112E00803761 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4511EA199C112E00803761 /* UIKit.framework */; };
 		FA4511EE199C112E00803761 /* libARFunctional.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4511D6199C112E00803761 /* libARFunctional.a */; };
 		FA4511F4199C112E00803761 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA4511F2199C112E00803761 /* InfoPlist.strings */; };
 		FA4511F6199C112E00803761 /* ARFunctionalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4511F5199C112E00803761 /* ARFunctionalTests.m */; };
+		FA451201199C115B00803761 /* NSArray+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = FA451200199C115B00803761 /* NSArray+Functional.m */; };
+		FA451202199C115B00803761 /* NSArray+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = FA451200199C115B00803761 /* NSArray+Functional.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				FA4511DF199C112E00803761 /* ARFunctional.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +44,14 @@
 		FA4511D6199C112E00803761 /* libARFunctional.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libARFunctional.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4511D9199C112E00803761 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA4511DD199C112E00803761 /* ARFunctional-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARFunctional-Prefix.pch"; sourceTree = "<group>"; };
-		FA4511DE199C112E00803761 /* ARFunctional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARFunctional.h; sourceTree = "<group>"; };
-		FA4511E0199C112E00803761 /* ARFunctional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARFunctional.m; sourceTree = "<group>"; };
 		FA4511E6199C112E00803761 /* ARFunctionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARFunctionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4511E7199C112E00803761 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FA4511EA199C112E00803761 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		FA4511F1199C112E00803761 /* ARFunctionalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARFunctionalTests-Info.plist"; sourceTree = "<group>"; };
 		FA4511F3199C112E00803761 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA4511F5199C112E00803761 /* ARFunctionalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARFunctionalTests.m; sourceTree = "<group>"; };
+		FA4511FF199C115B00803761 /* NSArray+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Functional.h"; sourceTree = "<group>"; };
+		FA451200199C115B00803761 /* NSArray+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Functional.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +109,8 @@
 		FA4511DB199C112E00803761 /* ARFunctional */ = {
 			isa = PBXGroup;
 			children = (
-				FA4511DE199C112E00803761 /* ARFunctional.h */,
-				FA4511E0199C112E00803761 /* ARFunctional.m */,
+				FA4511FF199C115B00803761 /* NSArray+Functional.h */,
+				FA451200199C115B00803761 /* NSArray+Functional.m */,
 				FA4511DC199C112E00803761 /* Supporting Files */,
 			);
 			path = ARFunctional;
@@ -224,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA4511E1199C112E00803761 /* ARFunctional.m in Sources */,
+				FA451201199C115B00803761 /* NSArray+Functional.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA4511F6199C112E00803761 /* ARFunctionalTests.m in Sources */,
+				FA451202199C115B00803761 /* NSArray+Functional.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
