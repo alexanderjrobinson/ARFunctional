@@ -71,11 +71,13 @@
 }
 
 - (void)testMap {
-    NSArray *testArray = @[@"one",@"two",@"three"];
-    NSArray *newArray = [testArray map:^NSString*(NSString* string) {
-        return [string stringByAppendingString:@"test"];
+    // Map NSNumber values to NSString values
+    NSArray *testArray = @[@1,@2,@3];
+    NSArray *newArray = [testArray map:^NSString*(NSNumber* number) {
+        return [number stringValue];
     }];
-    NSArray *exptectedArray = @[@"onetest",@"twotest",@"threetest"];
+    
+    NSArray *exptectedArray = @[@"1",@"2",@"3"];
     XCTAssert([newArray isEqualToArray:exptectedArray], @"Expected array %@", exptectedArray);
 }
 
@@ -88,6 +90,8 @@
 
 -(void)testFilter {
     NSArray *testArray = @[@1,@2,@3,@4,@5,@6,@7];
+    
+    // Filter array to contain only even numbers
     NSArray *newArray = [testArray filter:^BOOL(NSNumber *obj) {
         return [obj integerValue] % 2 == 0;
     }];
@@ -104,6 +108,8 @@
 
 -(void)testReject {
     NSArray *testArray = @[@1,@2,@3,@4,@5,@6,@7];
+    
+    // Reject any even numbers
     NSArray *newArray = [testArray reject:^BOOL(NSNumber *obj) {
         return [obj integerValue] % 2 == 0;
     }];
@@ -122,13 +128,14 @@
 -(void)testAny {
     NSArray *testArray = @[@1,@2,@3,@4,@5,@6,@7];
     
+    // Verify if any of the numbers are negative; Expected to be NO
     BOOL negativeNumbers = [testArray any:^BOOL(NSNumber *obj) {
         return [obj integerValue] < 0;
     }];
     
     XCTAssertFalse(negativeNumbers, @"Expected no negative numbers");
     
-    
+    // Verify if any of the numbers are even
     BOOL evenNumbers = [testArray any:^BOOL(NSNumber *obj) {
         return [obj integerValue] % 2 == 0;
     }];
@@ -147,13 +154,14 @@
 -(void)testAll {
     NSArray *testArray = @[@1,@2,@3,@4,@5,@6,@7];
     
+    // Verify all the numbers are positive numbers
     BOOL positiveNumbers = [testArray all:^BOOL(NSNumber *obj) {
         return [obj integerValue] > 0;
     }];
     
     XCTAssertTrue(positiveNumbers, @"Expected positive numbers");
     
-    
+    // Verify all the numbers are even; Expected to return NO
     BOOL evenNumbers = [testArray all:^BOOL(NSNumber *obj) {
         return [obj integerValue] % 2 == 0;
     }];
@@ -162,23 +170,26 @@
 }
 
 -(void)testMapAndFilter {
+    // Example of chaining map and filter with a custom NSObject subclass
+    
     NSArray *cities = @[[[City alloc] initWithName:@"Cincinnati" population:296],
         [[City alloc] initWithName:@"Dayton" population:141],
         [[City alloc] initWithName:@"Columbus" population:787],
         [[City alloc] initWithName:@"Cleveland" population:396]];
+
     
-   NSArray *results = [[[cities map:^City*(City *city) {
+    NSArray *results = [[[cities map:^City*(City *city) {
        // Cities populations listed in 1,000s
        city.population = city.population * 1000;
        return city;
-   }] filter:^BOOL(City *city) {
+    }] filter:^BOOL(City *city) {
        // Filter cities to only cities with population more than 200,000
        return city.population > 200000;
-   }] map:^NSString*(City *city) {
+    }] map:^NSString*(City *city) {
        // Map city name to new array of strings
        return city.name;
-   }];
-    
+    }];
+
     
     NSArray *exptectedArray = @[@"Cincinnati",@"Columbus",@"Cleveland"];
     
